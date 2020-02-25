@@ -1,6 +1,4 @@
-/.idea/.gitignore
-/.idea/http--starting-setup.iml
-/.idea/misc.xml
-/.idea/modules.xml
+.idea
 /node_modules/
-/.idea/vcs.xml
+/.idea/shelf/Default_Changelist.xml
+/.idea/shelf/Default_Changelist/shelved.patch
