@@ -25,11 +25,16 @@ class Blog extends Component {
                                     Home
                                 </NavLink>
                             </li>
-                            <li><NavLink to={{
-                                pathname: "/new-post",
-                                hash: '@submit',
-                                search: '?quick-submit=true'
-                            }}>New Post</NavLink></li>
+                            <li>
+                                <NavLink to={
+                                    {
+                                        pathname: "/new-post",
+                                        hash: '@submit',
+                                        search: '?quick-submit=true'
+                                    }}>
+                                    New Post
+                                </NavLink>
+                            </li>
                         </ul>
                     </nav>
                 </header>
@@ -40,7 +45,7 @@ class Blog extends Component {
                 {/*       render={() => <h1>Home 2</h1>}/>*/}
                 <Route path="/" exact component={Posts}/>
                 <Route path="/new-post" component={NewPost}/>
-                <Route path="/:id" exact component={FullPost}/>
+                <Route path="/posts/:id" exact component={FullPost}/>
             </div>
         );
     }
